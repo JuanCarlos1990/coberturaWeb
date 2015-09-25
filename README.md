@@ -1,9 +1,8 @@
 Copyright (c) 2014, 2015 Jaramillo Juan Carlos, Gallardo Rafael
-
 Using GNU GPL v3 License
 
-You should have received a copy of the GNU General Public License
-along with coberturaWeb.  If not, see <http://www.gnu.org/licenses/>.
+	You should have received a copy of the GNU General Public License
+        along with e-Cobertura.  If not, see <http://www.gnu.org/licenses/>.
 
 ##coberturaWeb - Web App
 
