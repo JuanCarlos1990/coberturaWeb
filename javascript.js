@@ -1,5 +1,5 @@
-google.load(&quot;visualization&quot;, &quot;0&quot;, {packages:[&quot;corechart&quot;]});
-    google.load(&#39;visualization&#39;, &#39;1&#39;, {packages: [&#39;corechart&#39;, &#39;line&#39;]});
+google.load("visualization", "0", {packages:["corechart"]});
+    google.load('visualization', '1', {packages: ['corechart', 'line']});
                 var map = null;
                 var color;
                 //Delta Horizontal
@@ -56,12 +56,12 @@ google.load(&quot;visualization&quot;, &quot;0&quot;, {packages:[&quot;corechart
                 var desvECnt = 0;
                 var file;
                 //Draw Button on Map
-                var elementUnivCuenca = document.createElement(&#39;div&#39;);
-                var elementEstadist =  document.createElement(&#39;div&#39;);
-                var elementClaro = document.createElement(&#39;div&#39;);
-                var elementMovistar = document.createElement(&#39;div&#39;);
-                var elementCnt = document.createElement(&#39;div&#39;);
-                var elementShowHideAnt = document.createElement(&#39;div&#39;);
+                var elementUnivCuenca = document.createElement('div');
+                var elementEstadist =  document.createElement('div');
+                var elementClaro = document.createElement('div');
+                var elementMovistar = document.createElement('div');
+                var elementCnt = document.createElement('div');
+                var elementShowHideAnt = document.createElement('div');
                 var bandClaro = false;
                 var bandMovistar = false;
                 var bandCnt = false;
@@ -253,23 +253,23 @@ google.load(&quot;visualization&quot;, &quot;0&quot;, {packages:[&quot;corechart
     var markersAntenasMovistar = [];
     var markersAntenasCnt = [];
     var bandShowAntenas = false;
-    var imgColoresBarLatDerecha = {url: &#39;http://4.bp.blogspot.com/-XbQx10J6TdQ/VYmGsjU7p_I/AAAAAAAABWQ/oWcIfzr8uEU/s1600/colores.png&#39;};
+    var imgColoresBarLatDerecha = {url: 'http://4.bp.blogspot.com/-XbQx10J6TdQ/VYmGsjU7p_I/AAAAAAAABWQ/oWcIfzr8uEU/s1600/colores.png'};
                                    //Function initialize on program
                                    function initialize() {
-                                   numAreaForFind = document.getElementById(&#39;txtFindArea&#39;);
-                                   imgRojo =  {url: &#39;https://qelwig-ch3302.files.1drv.com/y2psSHsYw6DD4FAGdj2lkiKS7uV_pog1LE0ybwK6EGXOTb2xe6qmcTqLr-FqI4QUiFSsomM48rWvn-Qd1pGnnI-q3rTzZYrzEwTg4bLvW2CDACLw6d2giSzcjaCU5gv2vXgUJRtzYHuIVNBhhJgPwnxnQ/ro20.png&#39;};
+                                   numAreaForFind = document.getElementById('txtFindArea');
+                                   imgRojo =  {url: 'https://qelwig-ch3302.files.1drv.com/y2psSHsYw6DD4FAGdj2lkiKS7uV_pog1LE0ybwK6EGXOTb2xe6qmcTqLr-FqI4QUiFSsomM48rWvn-Qd1pGnnI-q3rTzZYrzEwTg4bLvW2CDACLw6d2giSzcjaCU5gv2vXgUJRtzYHuIVNBhhJgPwnxnQ/ro20.png'};
                                    var mapOptions = {
                                    zoom: 13,
                                    center: myLatlng,
                                    mapTypeId:google.maps.MapTypeId.ROADMAP
                                   };
-    map=new google.maps.Map(document.getElementById(&quot;googleMap&quot;),mapOptions);
+    map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
     proccessData();
     createButtons();
     }  
-    
-    
-     //function cuando se presiona el boton Buscar Area
+    google.maps.event.addDomListener(window, 'load', initialize);
+  
+          //function cuando se presiona el boton Buscar Area
         function buscarArea () {
           map.setZoom(13);
           //Reset all variables for animation of movement of search area
@@ -320,7 +320,7 @@ google.load(&quot;visualization&quot;, &quot;0&quot;, {packages:[&quot;corechart
           function fillHtmlElements (mPotPromArea, cntSameArea, potSameArea) {
             lblShowSelectArea.innerHTML = txtNumAreaForFind;
             mPotPromArea[posVareaFind][posHareaFind] = toFixed(mPotPromArea[posVareaFind][posHareaFind], 2);
-            lblShowSelectPotProm.innerHTML = mPotPromArea[posVareaFind][posHareaFind] +&quot; dB&quot;;
+            lblShowSelectPotProm.innerHTML = mPotPromArea[posVareaFind][posHareaFind] +" dB";
             lblShowSelectNumPots.innerHTML = cntSameArea[posVareaFind][posHareaFind];
             txtAreaPotMedidasSelect.innerHTML = potSameArea[posVareaFind][posHareaFind];
           }
@@ -332,10 +332,10 @@ google.load(&quot;visualization&quot;, &quot;0&quot;, {packages:[&quot;corechart
           //Draw a polygon azul sobre el area buscada
           areaBusqPuntero = new google.maps.Polygon({
             paths: rectangCoords[posVe][posHo],
-            strokeColor: &#39;#0000FF&#39;,
+            strokeColor: '#0000FF',
             strokeOpacity: 1,
             strokeWeight: 3,
-            fillColor: &#39;transparent&#39;,
+            fillColor: 'transparent',
             fillOpacity: 0.5
           });
           areaBusqPuntero.setMap(map);
@@ -1095,7 +1095,5 @@ google.load(&quot;visualization&quot;, &quot;0&quot;, {packages:[&quot;corechart
             var chart = new google.visualization.LineChart(divMediaDesvE);
             chart.draw(data, options);
           }
-       
-    google.maps.event.addDomListener(window, &#39;load&#39;, initialize);
-    
-    
+
+  
