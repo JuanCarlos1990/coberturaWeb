@@ -1,4 +1,4 @@
- * {
+       * {
         box-sizing: border-box;
       }
       html, body {
@@ -7,7 +7,7 @@
       #hUno, #hDos {
         margin-top:2%;
         color: #248FB2;
-        font-family: Georgia, Cambria, Times, &quot;Times New Roman&quot;;
+        font-family: Georgia, Cambria, Times, "Times New Roman";
       }
       #divIzqFind {
         height: auto;
@@ -77,7 +77,7 @@
         background: #526A82;
       }
       .tag {
-        font-family: &quot;Lucida Sans Unicode&quot;, Georgia, Serif;
+        font-family: "Lucida Sans Unicode", Georgia, Serif;
         font-size: 100%;
         color: #00476B;
         text-decoration: underline;
@@ -87,12 +87,12 @@
         border-radius: 6px;
       }
       .labelResults {
-        font-family: &quot;Lucida Sans Unicode&quot;, Georgia, Serif;
+        font-family: "Lucida Sans Unicode", Georgia, Serif;
         font-size: 80%;
         color: #003380;
       }
       .resLblResults {
-        font-family: &quot;Lucida Sans Unicode&quot;, Georgia, Serif;
+        font-family: "Lucida Sans Unicode", Georgia, Serif;
         font-size: 80%;
         color: #0099FF;
         font-weight: bolder;
